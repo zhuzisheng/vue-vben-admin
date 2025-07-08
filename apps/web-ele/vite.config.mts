@@ -11,6 +11,7 @@ export default defineConfig(async () => {
           format: 'esm',
         }),
       ],
+      base: "/admin/",
       server: {
         proxy: {
           '/api': {

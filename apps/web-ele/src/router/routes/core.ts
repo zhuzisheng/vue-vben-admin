@@ -35,7 +35,18 @@ const coreRoutes: RouteRecordRaw[] = [
     },
     name: 'Root',
     path: '/',
-    redirect: preferences.app.defaultHomePath,
+    redirect: '/admin/news/viewer',
+    children: [],
+  },
+  {
+    component: BasicLayout,
+    meta: {
+      hideInBreadcrumb: true,
+      title: 'Admin',
+    },
+    name: 'Admin',
+    path: '/admin/',
+    redirect: '/admin/news/viewer',
     children: [],
   },
   {
